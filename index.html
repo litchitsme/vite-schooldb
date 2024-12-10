@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite API fetching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="min-h-screen bg-gradient-to-br from-purple-100 to-blue-100 p-8">
+        <div class="max-w-6xl mx-auto">
+          <h1 class="text-4xl font-bold text-center mb-10 text-gray-800">Courses</h1>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+            <input class="m-4" type="number" id="courseId" placeholder="Course id">
+            <input class="m-4" type="text" id="courseName" placeholder="Course name">
+            <input class="m-4" type="number" id="coursePrice" placeholder="Price">
+            <input class="m-4" type="date" id="courseStart" placeholder="Start">
+            <input class="m-4" type="number" id="courseDuration" placeholder="Duration">
+            <input class="m-4" type="number" id="courseTypeId" placeholder="Type_id">
+          </div>      
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded" id="show-courses">Show All Courses</button>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded" id="search-courses">Search Courses</button>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded" id="add-course">Add course</button>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded" id="delete-course">Delete course</button>            
+          <div class="" id="message"></div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="output">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
